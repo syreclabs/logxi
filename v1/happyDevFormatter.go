@@ -194,7 +194,7 @@ func (hd *HappyDevFormatter) getLevelContext(level int, entry map[string]interfa
 	case LevelTrace:
 		color = theme.Trace
 		context = hd.getContext(color)
-		context += "\n"
+		// context += "\n"
 	case LevelDebug:
 		color = theme.Debug
 	case LevelInfo:
@@ -212,7 +212,7 @@ func (hd *HappyDevFormatter) getLevelContext(level int, entry map[string]interfa
 			kv := entry[KeyMap.CallStack]
 			if kv == nil {
 				context = hd.getContext(color)
-				context += "\n"
+				// context += "\n"
 				break
 			}
 		} else {
